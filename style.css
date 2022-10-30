@@ -4,34 +4,34 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.desc-section {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.desc-section__img {
     width: 100%;
 }
-.aaa .more_inf {
+.desc-section__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-    .aaa { text-align: center;
+    .desc-section { text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.main__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
-.task-row-wrapper {
+.main__task-wrap {
     display: flex;
     margin-top: 20px;
 }
@@ -47,7 +47,7 @@ input,
 button{
     outline: none;
 }
-button {
+.main__button {
     background: none;
     border: 0px;
     color: #888;
@@ -60,8 +60,7 @@ button:hover {
     color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+.main__title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -131,7 +130,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#main__list-complet label {
     text-decoration: line-through;
     color: #888;
 }
@@ -141,11 +140,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
     display: none;
 }
